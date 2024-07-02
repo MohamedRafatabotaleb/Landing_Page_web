@@ -1,3 +1,17 @@
+:root {
+  --color-dark-blue: #0b132a;
+  --color-soft-red: #f53838;
+  --color-gray: #4f5665;
+  --color-soft-gray: #dddddd;
+  --color-white: white;
+  --color-off-white: #f8f8f8;
+  --default-padding: 2rem;
+  --default-radius: 0.4rem;
+  --desktop-width: 900px;
+  --tablet-width: 600px;
+  --timing-animation: 0.2s;
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -45,4 +59,13 @@ a {
   color: inherit;
 }
 
-/* End CSS Reset *//*# sourceMappingURL=style.css.map */
+/* End CSS Reset */ /*# sourceMappingURL=style.css.map */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  padding: 0 var(--default-padding);
+  gap: calc(var(--default-padding) * 4);
+}
